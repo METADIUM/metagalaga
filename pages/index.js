@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
-import dynamic from 'next/dynamic';
-import web3 from '../ethereum/web3.js';
+import React, { Component } from 'react'
+import dynamic from 'next/dynamic'
+import web3 from '../ethereum/web3.js'
 import Favicon from 'react-favicon'
 
 const DynamicComponentWithNoSSR = dynamic(
@@ -9,13 +9,13 @@ const DynamicComponentWithNoSSR = dynamic(
 )
 
 class Index extends Component {
-  componentDidMount() {
+  componentDidMount () {
     web3.eth.net.getNetworkType().then((network) => { console.log('NETWORK TYPE : ', network) })
   }
-  render() {
+  render () {
     return (
       <div>
-        <Favicon url="../static/favicon.ico" />
+        <Favicon url='../static/favicon.ico' />
         <DynamicComponentWithNoSSR />
       </div>
     )
