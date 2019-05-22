@@ -127,6 +127,7 @@ export default class Galaga extends Component {
             qrvoffset={170}
             qrpadding='3em'
             qrposition='top left'
+            qrpopup={true}
           />}
         </div>
 
